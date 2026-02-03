@@ -1,17 +1,12 @@
-import os
-
-from dotenv import load_dotenv
-load_dotenv()
-
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT'),
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-    },
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': '',
+        'PORT': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+    }
 }
 
 INSTALLED_APPS = ['datacenter']
