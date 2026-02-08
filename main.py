@@ -22,5 +22,5 @@ if __name__ == '__main__':
     ### for passcard in Passcard.objects.all():
     ###     if passcard.is_active:
     ###         number_of_active+=1
-    number_of_active = len(Passcard.objects.filter(is_active=True))
+    number_of_active = Passcard.objects.filter(is_active=True).count()
     print('Активных пропусков:', number_of_active)
